@@ -1,0 +1,22 @@
+.root {
+  display: flex;
+  gap: 12px;
+}
+
+.values {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.letter {
+}
+.value {
+  font-weight: 600;
+}
+
+.valueFull {
+  width: 30px;
+  height: 4px;
+  border-radius: 4px;
+}
