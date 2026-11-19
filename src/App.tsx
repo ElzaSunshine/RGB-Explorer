@@ -2,7 +2,6 @@ import { useMemo, useState } from 'react';
 import styles from './App.module.scss';
 import { generateRGBArrayWithStep } from './utils/generateArray';
 import { SelectedColor } from './components/SelectedColor/SelectedColor';
-import { CanvasGrid } from './components/CanvasGrid/CanvasGrid';
 import { toRGBString } from './utils/utils';
 import RGBSeparately from './components/SelectedColor/components/RGBSeparately/RGBSeparately';
 import Header from './components/Header/Header';
@@ -90,7 +89,7 @@ function App() {
           </div>
         </div>
         <SelectedColor color={selectedColor} />
-        <RGBSeparately color={selectedColor} lightness={selectedColor[2]} />
+        <RGBSeparately color={selectedColor} lightness={selectedColor?.[2]} />
         {/* <CanvasGrid/> */}
       </div>
     </section>
